@@ -1,0 +1,78 @@
+body{
+  margin: 0;
+  font-family: Helvetica, Arial, Sans-Serif;
+  background: #FFC6F0;
+}
+canvas{
+  background: rgb(236, 230, 223);
+  margin: 0 auto;
+  display: block;
+  margin: 2em auto;
+  margin-top: 3em;
+}
+h1{
+  font-size: 1.5em;
+  font-weight: 100;
+  text-align: center;
+  margin: .5em;
+}
+h5{
+  font-weight: 100;
+  text-align: center;
+  margin: 1em;
+}
+h6{
+  font-weight: 100;
+  text-align: center;
+  margin: 1em;
+}
+.modal{
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0,0,0, .2);
+}
+.animate-shake{
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+#etch-a-sketch{
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 2em auto;
+}
+#etcha-frame{
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-300px);
+}
+#myCanvas{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-250px);
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
